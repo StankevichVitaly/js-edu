@@ -9,11 +9,11 @@ module.exports = function getTimeForEducation(
     knowsProgramming = true,
     config = {family: 4}
     ) {
-      const timeToLearn = 800;
-      const timeToLearnBasic = 500;
+      const timeForLearn = 800;
+      const timeForLearnBasic = 500;
       if(knowsProgramming){
-        return  Math.ceil(timeToLearn/config[focus]);
+        return  Math.ceil(timeForLearn/config[focus]);
       }else{
-        return Math.ceil((timeToLearn + timeToLearnBasic)/config[focus]);
+        return Math.ceil((timeForLearn + timeForLearnBasic)/config[focus]);
       }
   };
